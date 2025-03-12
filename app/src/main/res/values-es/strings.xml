@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuotationShake</string>
+    <string name="get_new_quotation">Obtener una nueva cita</string>
+    <string name="favourite_quotations">Citas favoritas</string>
+    <string name="settings">Ajustes</string>
+    <string name="about">Acerca de</string>
+    <string name="welcome_message">Hola %1$s!,\n\nActualice para obtener una nueva cita\n\n(deslizar hacia abajo o haga click en el menú de opciones  )</string>
+    <string name="anonymous">Anónimo</string>
+</resources>

@@ -3,6 +3,21 @@
     <style name="Base.Theme.QuotationShake" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primaryVariant</item>
+        <item name="colorSecondary">@color/secondary</item>
+
+        <!-- Background and surface -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/design_default_color_error</item>
     </style>
 
     <style name="Theme.QuotationShake" parent="Base.Theme.QuotationShake" />
