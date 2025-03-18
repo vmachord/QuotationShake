@@ -42,7 +42,5 @@ class QuotationListAdapter(private val onItemClick: (String) -> Unit) : ListAdap
             return oldItem == newItem
         }
     }
-
-
 }
 

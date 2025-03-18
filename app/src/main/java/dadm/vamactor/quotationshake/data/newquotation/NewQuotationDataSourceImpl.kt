@@ -1,7 +1,6 @@
 package dadm.vamactor.quotationshake.data.newquotation
 
 import dadm.vamactor.quotationshake.data.newquotation.model.RemoteQuotationDto
-import domain.model.Quotation
 import okhttp3.MediaType
 import okhttp3.ResponseBody
 import retrofit2.Response
@@ -24,16 +23,3 @@ class NewQuotationDataSourceImpl@Inject constructor(private val retrofit: Retrof
     }
 }
 
-/*
-* val num = Random.nextInt(1, 100)
-        return if (Random.nextDouble() < 0.9) {
-            val quotation = Quotation(
-                id = "$num",
-                text = "Quotation text #$num",
-                author = "Author #$num"
-            )
-            Result.success(quotation)
-        } else {
-            Result.failure(Exception("Error al obtener la cita"))
-        }
-* */

@@ -7,4 +7,6 @@
     <string name="about">Acerca de</string>
     <string name="welcome_message">Hola %1$s!,\n\nActualice para obtener una nueva cita\n\n(deslizar hacia abajo o haga click en el menú de opciones  )</string>
     <string name="anonymous">Anónimo</string>
+    <string name="english" translatable="false">Inglés</string>
+    <string name="russian" translatable="false">Ruso</string>
 </resources>

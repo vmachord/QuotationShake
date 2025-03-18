@@ -10,4 +10,6 @@
     <string name="error_server" translatable="false">Server error. Please try again later.</string>
     <string name="error_validation" translatable="false">Validation error. Please check the entered data.</string>
     <string name="error_unexpected" translatable="false">An unexpected error occurred. Please try again.</string>
+    <string name="english">English</string>
+    <string name="russian">Russian</string>
 </resources>
