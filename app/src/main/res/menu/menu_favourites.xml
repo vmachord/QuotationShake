@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/deleteID"
-        android:title="Delete all quotations"
+        android:title="@string/delete_all_quotations"
         android:icon="@drawable/delete"
         app:showAsAction="never"/>
 </menu>

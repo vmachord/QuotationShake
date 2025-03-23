@@ -2,7 +2,6 @@ package dadm.vamactor.quotationshake.data.newquotation
 
 import dadm.vamactor.quotationshake.data.newquotation.model.RemoteQuotationDto
 import retrofit2.Response
-import retrofit2.Retrofit
 import retrofit2.http.GET
 import retrofit2.http.Query
 

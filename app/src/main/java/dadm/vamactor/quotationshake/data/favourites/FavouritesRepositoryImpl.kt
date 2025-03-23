@@ -1,5 +1,6 @@
 package dadm.vamactor.quotationshake.data.favourites
 
+import android.util.Log
 import dadm.vamactor.quotationshake.data.favourites.model.DatabaseQuotationDto
 import domain.model.Quotation
 import kotlinx.coroutines.flow.Flow
@@ -30,6 +31,7 @@ class FavouritesRepositoryImpl @Inject constructor(private val favoritesDataSour
 
     override suspend fun removeFavourite(quotation: Quotation?) {
         val databaseQuotationDto = convertToDatabaseQuotationDto(quotation)
+        Log.d("DeleteQuotation", "Deleting quotation with ID: ${databaseQuotationDto}")
         favoritesDataSource.deleteFavourite(databaseQuotationDto)
     }
 
@@ -51,8 +53,15 @@ class FavouritesRepositoryImpl @Inject constructor(private val favoritesDataSour
 
     private fun convertToDatabaseQuotationDto(quotation: Quotation?): DatabaseQuotationDto? {
         if (quotation != null) {
+
+            Log.d("DeleteQuotation", "Deleting quotation con ID: ${quotation.id}")
+            val id = if (quotation.id.contains("/")) {
+                quotation.id.substringBeforeLast("/").substringAfterLast("/").toLong(16)
+            } else {
+                quotation.id.toLong()
+            }
             return DatabaseQuotationDto(
-                id = quotation.id.substringBeforeLast("/").substringAfterLast("/").toLong(16),
+                id = id,
                 text = quotation.text,
                 author = quotation.author
             )

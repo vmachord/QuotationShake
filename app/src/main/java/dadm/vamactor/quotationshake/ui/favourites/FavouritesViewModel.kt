@@ -1,5 +1,6 @@
 package dadm.vamactor.quotationshake.ui.favourites
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dadm.vamactor.quotationshake.data.favourites.FavouritesRepository
@@ -34,6 +35,7 @@ class FavouritesViewModel @Inject constructor(private val favouritesRepository :
 
             if (position in currentQuotations.indices) {
                 val quotationToDelete = currentQuotations[position]
+                Log.d("DeleteQuotation", "Quotation to delete: $quotationToDelete")
                 favouritesRepository.removeFavourite(quotationToDelete)
             }
         }

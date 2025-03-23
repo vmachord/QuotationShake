@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">QuotationShake</string>
-    <string name="get_new_quotation">Obtener una nueva cita</string>
-    <string name="favourite_quotations">Citas favoritas</string>
+    <string name="get_new_quotation">Nueva cita</string>
+    <string name="favourite_quotations">Favoritos</string>
     <string name="settings">Ajustes</string>
     <string name="about">Acerca de</string>
     <string name="welcome_message">Hola %1$s!,\n\nActualice para obtener una nueva cita\n\n(deslizar hacia abajo o haga click en el menú de opciones  )</string>
     <string name="anonymous">Anónimo</string>
-    <string name="english" translatable="false">Inglés</string>
-    <string name="russian" translatable="false">Ruso</string>
+    <string name="error_network">Por favor, compruebe su conexión a Internet.</string>
+    <string name="error_server">Error del servidor. Vuelva a intentarlo más tarde.</string>
+    <string name="error_validation">Error de validación. Por favor, compruebe los datos introducidos.</string>
+    <string name="error_unexpected">Se ha producido un error inesperado. Por favor, inténtelo de nuevo.</string>
+    <string name="english">Inglés</string>
+    <string name="russian">Ruso</string>
+    <string name="delete_all_quotations">Borrar todas las citas</string>
+    <string name="refresh">Actualizar</string>
+    <string name="user_name">Nombre de usuario</string>
+    <string name="get_quotations_in">Obtener citas en...</string>
+    <string name="language">Lenguaje</string>
+    <string name="delete_all_favourite">Borrar todas las citas favoritas</string>
+    <string name="messageString">¿De verdad quieres borrar todas tus citas?</string>
+    <string name="yes">Si</string>
 </resources>
