@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/newQuotationFragment">
+
+    <fragment
+        android:id="@+id/newQuotationFragment"
+        android:name="dadm.vamactor.quotationshake.ui.newquotation.NewQuotationFragment"
+        android:label="@string/get_new_quotation" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="dadm.vamactor.quotationshake.ui.settings.SettingsFragment"
+        android:label="@string/settings" />
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="dadm.vamactor.quotationshake.ui.favourites.FavouritesFragment"
+        android:label="@string/favourite_quotations">
+        <action
+            android:id="@+id/action_favouritesFragment_to_deleteAllDialogFragment"
+            app:destination="@id/deleteAllDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/aboutDialogFragment"
+        android:name="dadm.vamactor.quotationshake.ui.about.AboutDialogFragment"
+        android:label="AboutDialog" />
+
+    <dialog
+        android:id="@+id/deleteAllDialogFragment"
+        android:name="dadm.vamactor.quotationshake.ui.favourites.DeleteAllDialogFragment"
+        android:label="DeleteAllDialog" />
+</navigation>
